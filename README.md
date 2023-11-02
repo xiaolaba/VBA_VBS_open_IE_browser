@@ -25,7 +25,9 @@ testing, done, 2023-NOV-01
 Sub Automate_IE_Load_Page()
 
 ' !!!! note : add reference,
-' VB, Microsoft HTML object library
+' Microsoft HTML object library
+' Microsoft Internet Control library
+
 '
 ' ref, https://www.codeproject.com/Articles/43491/Opening-IE-Using-C-and-Firing-Events
 ' c#, add COM, shdocvw.dll
@@ -38,7 +40,7 @@ Sub Automate_IE_Load_Page()
     Dim objCollection As Object
  
     'Create InternetExplorer Object
-    Set IE = New InternetExplorer  'it is faster ??
+    Set IE = New InternetExplorer  'it is faster ?? ''Microsoft Internet Control library
     'Set IE = CreateObject("InternetExplorer.Application")
  
     'Set IE.Visible = True to make IE visible, or False for IE to run in the background
