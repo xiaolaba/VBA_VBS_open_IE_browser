@@ -175,3 +175,30 @@ namespace csharpIEapp
 }
 }
 ```
+
+
+
+### VBS open IE under Win10 or Win11
+看起來是還有其他潛藏的問題.  
+試驗過並非 KB5031356 或者 build# 的問題,  
+它自動更新到 'Windows 10 家用版 22H2 19045.3636 Windows Feature Experience Pack 1000.19053.1000.0,  
+又跳出提示 IE11 斷炊, 選擇不換EDGE瀏覽器, 提示7天後再來提醒  
+系統完全沒有替換任何 DLL, 純粹原裝  
+
+一直用的這個 VBS 測試, 都順利開 IE  
+
+```
+'2023-NOV-01 testing
+'Windows 10 家用版 22H2 19045.3570 Windows Feature Experience Pack 1000.19053.1000.0
+'open IE11 is still working
+
+'2023-NOV-03 testing
+'Windows 10 家用版 22H2 19045.3636 Windows Feature Experience Pack 1000.19053.1000.0
+'open IE11 is still working
+
+Set ie = CreateObject("InternetExplorer.Application")
+URL = "www.st.com"
+ie.Navigate "about:blank"
+ie.Navigate URL
+ie.Visible = 1
+```
