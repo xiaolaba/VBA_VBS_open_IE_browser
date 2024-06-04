@@ -3,9 +3,10 @@ testing code snippet
 
 
 ### uses_IE_browser
-if user invoke IE directly, the exe,
+no working any more,  
+~~ if user invoke IE directly, the exe, ~~  
 ```
-C:\Program Files\Internet Explorer\iexplore.exe
+~~ C:\Program Files\Internet Explorer\iexplore.exe ~~  
 ```
 
 ### WIN10, Microsoft says IE browser was no longer working if user invoke IE directly
