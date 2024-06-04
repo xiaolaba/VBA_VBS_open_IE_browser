@@ -5,7 +5,6 @@ testing code snippet
 ### uses_IE_browser
 no working any more,  
 ~~if user invoke IE directly, the exe,~~
-not working anymore,  
 ```
 C:\Program Files\Internet Explorer\iexplore.exe
 ```
